@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information Form</title>
+    <style>
+      .studentForm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .form-row {
+        display: flex;
+        flex-basis: 48%;
+        margin-bottom: 10px;
+      }
+
+      .form-row label {
+        flex-basis: 30%;
+      }
+
+      .form-row input {
+        flex-basis: 70%;
+      }
+
+      .form-actions {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+
+      .form-actions input[type="button"] {
+        flex: 1;
+        margin: 5px;
+      }
+
+      .form-output {
+        display: flex;
+        flex-basis: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h2
+        style="
+          text-align: center;
+          background-color: lightsteelblue;
+          padding: 10px;
+        "
+      >
+        Student Information Form
+      </h2>
+      <form id="studentForm" class="studentForm">
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-row">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" />
+        </div>
+        <div class="form-row">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-row">
+          <label for="major">Major:</label>
+          <input type="text" id="major" name="major" />
+        </div>
+        <div class="form-row">
+          <label for="university">University:</label>
+          <input type="text" id="university" name="university" />
+        </div>
+        <div class="form-row">
+          <label for="gpa">GPA:</label>
+          <input type="number" step="0.1" id="gpa" name="gpa" max="4.0" />
+        </div>
+        <div class="form-actions">
+          <input
+            type="button"
+            value="Insert"
+            onclick="insertStudent()"
+            style="background-color: lightgreen"
+          />
+          <input
+            type="button"
+            value="Show"
+            onclick="show_info()"
+            style="background-color: lightgreen"
+          />
+        </div>
+        <div class="form-actions">
+          <input
+            type="button"
+            value="Clear Input"
+            onclick="clearFields()"
+            style="background-color: lightsalmon"
+          />
+          <input
+            type="button"
+            value="Clear Display"
+            onclick="clearDisplay()"
+            style="background-color: lightsalmon"
+          />
+        </div>
+        <div class="form-row" style="margin-top: 10px">
+          <label for="search">Search:</label>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            oninput="searchStudent()"
+          />
+        </div>
+        <div class="form-output" id="demo_div" style="margin-top: 20px"></div>
+      </form>
+    </div>
+
+    <script src="script_index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <input type="text" placeholder="Enter A" id="input_a">
+    <input type="text" placeholder="Enter B" id="input_b">
+    <button onclick="generate_random_value()">Generate Random Number</button>
+    <div id="output_div"></div>
+    <script>
+        let colors = ["red", "green", "blue", "purple"];
+
+        function generate_random_value() {
+            let min_val = parseInt(document.getElementById("input_a").value);
+            let max_val = parseInt(document.getElementById("input_b").value);
+            let random_value = Math.floor(Math.random() * (max_val - min_val + 1)) + min_val;
+            document.getElementById("output_div").innerHTML = random_value;
+
+            let size = colors.length;
+            let index = Math.floor(Math.random() * size);
+            document.getElementById('output_div').style = 'color:' + colors[index] +'; font-weight:bold;';
+        }
+
+        setTimeout(vanish,5000);
+        function vanish(){
+            document.body.innerHTML = '';
+            document.body.innerHTML = '<h2>Everthing is vanished</h2>'
+        }
+    </script>
+</body>
+
+</html>

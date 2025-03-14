@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input Demo</title>
+  </head>
+  <body>
+    <input type="text" name="name" id="nameID" placeholder="Enter your name" />
+    <button onclick="demo_click();">Enter</button>
+
+    <script>
+      function demo_click() {
+        alert(`Welcome to JS ${document.getElementById("nameID").value}`);
+      }
+    </script>
+  </body>
+</html>

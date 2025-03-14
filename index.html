@@ -1,26 +1,40 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Class Works</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Write your CSS code in the designated file -->
+    <title>Project Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Write your HTML code here -->
-    <main>
-      <div class="heading"><h1>Class Works</h1></div>
-      <nav class="button-container" id="button-container"></nav>
-      <iframe
-        id="work-frame"
-        src="works/landing.html"
-        title="Class work content"
-        frameborder="0"
-      ></iframe>
-    </main>
+    <div class="container">
+      <aside id="task-list">
+        <div class="sidebar-header">
+          <div class="heading">
+            <h2><i class="fas fa-code"></i> Class Works</h2>
+            <i class="fas fa-home" id="home-button"></i>
+          </div>
+        </div>
+        <ul id="task-menu"></ul>
+      </aside>
 
-    <!-- Write your JavaScript code in the designated file -->
+      <main>
+        <div class="loader" id="loader"></div>
+        <iframe
+          id="task-content"
+          src="landing-page.html"
+          frameborder="0"
+          title="Task Content Display"
+          loading="lazy"
+        ></iframe>
+      </main>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

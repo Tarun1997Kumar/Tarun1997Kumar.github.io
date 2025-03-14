@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>String Operations</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function toUpperCase() {
+        let nameInput = document.getElementsByName("name")[0];
+        let nameDisabledInput = document.getElementsByName("name_disabled")[0];
+        nameDisabledInput.value = nameInput.value.toUpperCase();
+      }
+    </script>
+  </head>
+
+  <body>
+    <input
+      type="text"
+      name="name"
+      onkeyup="toUpperCase();"
+      placeholder="Enter text here"
+    />
+    <input
+      type="text"
+      name="name_disabled"
+      disabled
+      placeholder="Output generated here"
+    />
+  </body>
+</html>

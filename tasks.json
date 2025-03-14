@@ -1,0 +1,130 @@
+[
+  {
+    "title": "Task 1: Expectation Document",
+    "status": "Closed",
+    "due_date": "Jan 17, 2025 at 11:59pm",
+    "points_possible": 10,
+    "score": 10,
+    "url": "works/task1/index.html"
+  },
+  {
+    "title": "Task 2: Basic HTML Styling",
+    "status": "Closed",
+    "due_date": "Jan 15, 2025 at 9:15am",
+    "points_possible": 20,
+    "score": 20,
+    "url": "works/task2/index.html"
+  },
+  {
+    "title": "Task 3: CSS Hover",
+    "status": "Closed",
+    "due_date": "Jan 27, 2025 at 9:15am",
+    "points_possible": 20,
+    "score": 0,
+    "url": "works/task3/index.html"
+  },
+  {
+    "title": "Task 4: Welcome to JS",
+    "status": "Closed",
+    "due_date": "Jan 29, 2025 at 8:45am",
+    "points_possible": 20,
+    "score": 20,
+    "url": "works/task4/index.html"
+  },
+  {
+    "title": "Task 5: Calculator with JS",
+    "status": "Closed",
+    "due_date": "Jan 29, 2025 at 9:15am",
+    "points_possible": 20,
+    "score": 20,
+    "url": "works/task5/index.html"
+  },
+  {
+    "title": "Task 6: GitHub Integration",
+    "status": "Closed",
+    "due_date": "Feb 7, 2025 at 11:59pm",
+    "points_possible": 20,
+    "score": 20,
+    "url": "works/task6/index.html"
+  },
+  {
+    "title": "Task 7: Console Output",
+    "status": "Closed",
+    "due_date": "Feb 3, 2025 at 8:45am",
+    "points_possible": 20,
+    "score": 20,
+    "url": "works/task7/index.html"
+  },
+  {
+    "title": "Task 8: String Operation",
+    "status": "Closed",
+    "due_date": "Feb 3, 2025 at 9:15am",
+    "points_possible": 20,
+    "score": 20,
+    "url": "works/task8/index.html"
+  },
+  {
+    "title": "Task 9: Conditions",
+    "status": "Closed",
+    "due_date": "Feb 5, 2025 at 8:41am",
+    "points_possible": 20,
+    "score": 0,
+    "url": "works/task9/index.html"
+  },
+  {
+    "title": "Task 10: Call-Stack with Array",
+    "status": "Closed",
+    "due_date": "Feb 5, 2025 at 9:17am",
+    "points_possible": 30,
+    "score": 0,
+    "url": "works/task10/index.html"
+  },
+  {
+    "title": "Task 11: Class Work - Loops",
+    "status": "Closed",
+    "due_date": "Feb 12, 2025 at 9:20am",
+    "points_possible": 5,
+    "score": 5,
+    "url": "works/task11/index.html"
+  },
+  {
+    "title": "Task 12: Class Work",
+    "status": "Closed",
+    "due_date": "Feb 17, 2025 at 9:20am",
+    "points_possible": 5,
+    "score": 5,
+    "url": "works/task12/index.html"
+  },
+  {
+    "title": "Task 13: Class Work - Objects_2",
+    "status": "Closed",
+    "due_date": "Feb 19, 2025 at 9:20am",
+    "points_possible": 5,
+    "score": 5,
+    "url": "works/task13/index.html"
+  },
+  {
+    "title": "Task 14: Class Work - Functions",
+    "status": "Closed",
+    "due_date": "Feb 24, 2025 at 9:20am",
+    "points_possible": 5,
+    "score": 5,
+    "url": "works/task14/index.html"
+  },
+  {
+    "title": "Task 15: Class Work - Class & Bootstrap",
+    "status": "Closed",
+    "due_date": "Mar 10, 2025 at 9:30am",
+    "points_possible": 5,
+    "score": null,
+    "url": "works/task15/index.html"
+  },
+  {
+    "title": "Task 16: Class Work - JSON",
+    "status": "Closed",
+    "due_date": "Mar 12, 2025 at 11:59pm",
+    "points_possible": 5,
+    "score": null,
+    "url": "works/task16/index.html"
+  }
+]
