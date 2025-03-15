@@ -4,12 +4,43 @@ document.addEventListener("DOMContentLoaded", function () {
   const iframe = document.getElementById("task-content");
   const loader = document.getElementById("loader");
   const homeButton = document.getElementById("home-button");
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const sidebar = document.getElementById("task-list");
+  const backdrop = document.createElement("div");
+
+  backdrop.className = "sidebar-backdrop";
+
+  // Mobile menu toggle
+  mobileMenuBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    backdrop.classList.toggle("active");
+    mobileMenuBtn.classList.toggle("active");
+  });
+
+  // Close sidebar when clicking backdrop
+  backdrop.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    backdrop.classList.remove("active");
+  });
+
+  // Close sidebar when clicking a task (mobile only)
+  menu.addEventListener("click", (e) => {
+    if (window.innerWidth <= 768) {
+      sidebar.classList.remove("active");
+      backdrop.classList.remove("active");
+    }
+  });
+
   // Load landing page by default
   iframe.src = "landing-page.html";
 
   // Home button click handler
   homeButton.addEventListener("click", () => {
     iframe.src = "landing-page.html";
+    if (window.innerWidth <= 768) {
+      sidebar.classList.remove("active");
+      backdrop.classList.remove("active");
+    }
     document.querySelectorAll("#task-menu li").forEach((li) => {
       li.classList.remove("active");
     });
